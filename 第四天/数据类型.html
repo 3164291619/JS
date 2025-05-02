@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // int num=10;iava
+    // var num;这里的num我们是不确定属于那种数据类型的
+    var num = 10;
+    // 这里才确定num是数字型
+    // js的数据类型只有在程序运行中根据等号右边的值来确定的
+    var ser = 'pink';
+    // 字符串型
+    // js拥有动态类型，意味着相同的变量可以做不同的类型
+    var x = 10;
+    var x = 'bill';
+    // 1.八进制0~7,我们程序前面数字加0或者0o，表示八进制
+    var num1 = 0o10;
+    console.log(num1);
+    var num2 = 0o12;
+    console.log(num2);
+    // 2.十六进制，0~9 a~f #fffff,数字前面加0x表示十六进制
+    var num3 = 0x9;
+    console.log(num3);
+    var num4 = 0xa;
+    console.log(num4);
+    // 3.数字型的最大值
+    console.log(Number.MAX_VALUE);
+    // 4.数字型的最小值
+    console.log(Number.MIN_VALUE);
+    // 5.无穷大
+    console.log(Number.MAX_VALUE * 2)
+    // Infinity无穷大
+    // 6.-Infinity无穷小
+  </script>
+</head>
+
+<body>
+  <h2>数据类型简介</h2>
+  <h3>什么是数据类型</h3>
+  <div>数据类型简而言之就是数据的类别型号</div>
+  <h3>变量的数据类型</h3>
+  <div>变量用来储存值的所在地，他们有名字和数据类型。JavaScript是一种弱类型或者说动画语言</div>
+  <h3>数据类型的分类</h3>
+  <h5>简单数据类型</h5>
+  <table border="0">
+    <tr>
+      <th>简单数据类型</th>
+      <th>说明</th>
+      <th>默认值</th>
+    </tr>
+    <tr>
+      <td>Number</td>
+      <td>数字型，包含整型值和浮点型，如1.22、1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Boolean</td>
+      <td>布尔值型，如true、false，等价于1和0</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>String</td>
+      <td>字符串型，如“张三”，注意js里面字符都要加“”</td>
+      <td>“”</td>
+    </tr>
+    <tr>
+      <td>Undefined</td>
+      <td>var a;声明变量a，但没有给值时，a=Undefined</td>
+      <td>Undefined</td>
+    </tr>
+    <tr>
+      <td>Null</td>
+      <td>var a=null,声明变量a为空值</td>
+      <td>Null</td>
+    </tr>
+  </table>
+  <h6>注意小细节</h6>
+  <div>数字型进制，常见的有二进制、八进制、十进制、十六进制</div>
+  <div>数字范围，js中数值的最大值和最小值</div>
+  <div>数字型三个特殊值：infinity无穷大；-infinity无穷小；NaN,Not a number,代表一个非数值</div>
+  <h5>复杂数据类型</h5>
+</body>
+
+</html>
